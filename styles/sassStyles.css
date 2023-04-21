@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  --bodyColor: #fde8d7;
+  --fontColor: #f34a98;
+}
+
+.banner img {
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ddd;
+  background: var(--color);
+}
+
+/* ============= General =============== */
+/* ============= Header =============== */
+header {
+  padding: 5px;
+  background-color: #f7c7c7;
+}
+
+/* ============= End Header =============== */
+/* ============= Section Content =============== */
+h1 {
+  font-family: "Courgette", cursive;
+  font-weight: bolder;
+  text-align: center;
+  color: var(--fontColor);
+  font-size: 3vw;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  color: var(--fontColor);
+  font-size: 3vw;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+main section .title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .title .logo {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+main section .title .logo img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+main section .title .logo:hover {
+  filter: opacity(0.8);
+}
+main section .title .banner {
+  width: 60%;
+  height: 200px;
+  position: relative;
+}
+main section .title .banner img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+main section .title .identPage h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  font-size: 5vw;
+  padding: 4%;
+  text-align: center;
+}
+main section .txtBody {
+  display: inline;
+  justify-content: center;
+  align-content: center;
+}
+main section .txtBody p {
+  text-align: center;
+  font-size: 3vh;
+  margin: 2% 25% 5% 25%;
+}
+
+/* ============= End Section Content =============== */
+/* ============= Footer =============== */
+footer {
+  background-color: #f7c7c7;
+  display: flex;
+  height: 120px;
+  padding: 40px 0%;
+  margin-top: 5vh;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  justify-content: center;
+  color: var(--fontColor);
+  font-weight: bolder;
+}
+footer .icono {
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+footer .icono a {
+  text-decoration: none;
+}
+footer .icono img {
+  margin: 5px;
+  width: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+footer .icono p {
+  margin: 0 20%;
+  position: relative;
+}
+footer .icono:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* ============= End Footer =============== */
+main section .cont {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+main section .cont img {
+  width: 80%;
+  height: 80%;
+  margin: 10px 20px;
+  box-shadow: 0 0 15px #8a7474;
+  background-color: rgba(247, 199, 199, 0.3137254902);
+  border-radius: 20px;
+}
+main section .cont img :hover {
+  filter: opacity(0.8);
+  -webkit-transform: scale(1.3);
+  transform: scale(0.95);
+}
+main section .cont p {
+  font-size: 2em;
+}
+
+main section .slideGallery {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 15% 2% 15%;
+}
+main section .slideGallery img {
+  width: 60%;
+  margin-bottom: 7%;
+}
+
+main section .contact {
+  width: 60%;
+  display: grid;
+  grid-auto-columns: 80%;
+  justify-content: center;
+  align-content: center;
+  margin: 2% 0 10%;
+  transform: translate(35%, 0%);
+}
+main section .contact label {
+  font-size: 2.5vh;
+  margin: 3% 0;
+}
+main section .contact input {
+  margin-bottom: 5%;
+  height: 100%;
+  background-color: #f7c7c7;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 2.5vh;
+}
+main section .contact input :hover {
+  filter: opacity(0.8);
+  border-color: none;
+}
+main section .contact textarea {
+  background-color: #f7c7c7;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 2vh;
+}
+main section .contact .btn {
+  width: 60%;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  border-radius: 20px;
+  margin: 5% 10% 5% 10%;
+  padding: 2% 0;
+  font-size: 1.5rem;
+  background-color: var(--fontColor);
+}
+main section .contact .btn:hover {
+  filter: brightness(1.2);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  align-content: space-around;
+}
+
+.gallery .contImg {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .contImg img {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.contImg:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .contImg p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+/* ===== Media queries ===== */
+@media screen and (min-width: 420px) {
+  body {
+    background-color: var(--bodyColor);
+  }
+  h1 {
+    padding-left: 10%;
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 100%;
+    padding-left: 15%;
+  }
+  .title .logo {
+    width: 20%;
+    height: 20%;
+  }
+  .title .banner {
+    width: 90%;
+    height: 200px;
+  }
+  .gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .contImg {
+    display: flex;
+    width: 80%;
+    height: min-content;
+    justify-content: center;
+  }
+  .gallery .contImg img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 10%;
+  }
+  .gallery .contImg p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-top: 0;
+  }
+  .txtBody p {
+    text-align: center;
+    font-size: 2.5vh;
+    margin: 0% 10% 5% 10%;
+  }
+  footer {
+    background-color: #f7c7c7;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+  }
+  .info p {
+    margin: 0 10%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    background-color: var(--bodyColor);
+  }
+  h1 {
+    font-size: 3vw;
+    padding-left: 10%;
+  }
+  h2 {
+    font-size: 100%;
+    padding-left: 15%;
+  }
+  .title .logo {
+    width: 20%;
+    height: 20%;
+  }
+  .title .banner {
+    width: 70%;
+    height: 200px;
+  }
+  .gallery {
+    width: 100%;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .contImg {
+    display: grid;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .gallery .contImg img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .gallery .contImg p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin-top: 0;
+  }
+  .txtBody p {
+    text-align: center;
+    font-size: 3vh;
+    margin: 0% 25% 5% 25%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body {
+    background-color: var(--bodyColor);
+  }
+  h2 {
+    font-size: 1.5vw;
+  }
+  .gallery .contImg p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin-top: 0;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 40px 0%;
+    position: relative;
+    font-size: 18px;
+    justify-content: center;
+  }
+  .info p {
+    display: inline-flex;
+    margin: 0 20%;
+    position: relative;
+  }
+}/*# sourceMappingURL=sassStyles.css.map */

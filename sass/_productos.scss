@@ -1,0 +1,17 @@
+main{
+    section{
+        
+        .slideGallery{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0 15% 2% 15%;
+
+            img{
+                width: 60%;
+                margin-bottom: 7%;
+            }
+        }
+    }
+}
+

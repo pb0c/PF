@@ -1,0 +1,27 @@
+main{
+    section{
+        .cont{
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+            img{
+                width: 80%;
+                height: 80%;
+                margin: 10px 20px;
+                box-shadow: 0 0 15px #8a7474;
+                background-color: #f7c7c750;
+                border-radius: 20px;
+                :hover{
+                    filter: opacity(0.8);
+                    -webkit-transform:scale(1.3);transform:scale(0.95);
+                }
+            }
+            p{
+                font-size: 2em;
+            } 
+    
+        }
+    }
+}
+
+
